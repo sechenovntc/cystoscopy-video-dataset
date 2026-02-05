@@ -10,9 +10,11 @@ English | [Русский](./README_ru.md)
 
 Repository of [paper](https://doi.org/10.5281/zenodo.18493618) with validated  dataset of cystoscopy videos with bladder cancer
 
-| sample 1 | sample 2 |
-| --- | --- |
-| ![sample](./assets/00_sample.mp4) | ![sample](./assets/01_sample.mp4) |
+## Video samples
+
+https://github.com/user-attachments/assets/553079a8-a573-4791-823a-58ec5d687a43
+
+https://github.com/user-attachments/assets/8ef2407e-8a02-4e52-af42-3885a07bec2c
 
 ## Citation
 ```
