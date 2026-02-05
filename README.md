@@ -12,9 +12,11 @@ Repository of [paper](https://doi.org/10.5281/zenodo.18493618) with validated  d
 
 ## Video samples
 
-https://github.com/user-attachments/assets/553079a8-a573-4791-823a-58ec5d687a43
+https://github.com/user-attachments/assets/73397afb-ad84-45bd-a722-394f36c2f77a
 
-https://github.com/user-attachments/assets/8ef2407e-8a02-4e52-af42-3885a07bec2c
+https://github.com/user-attachments/assets/12490ebe-28f6-4e6b-8861-673fd531fed6
+
+
 
 ## Citation
 ```
