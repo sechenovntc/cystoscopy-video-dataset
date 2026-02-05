@@ -9,9 +9,11 @@
 
 Репозиторий [статьи](https://doi.org/10.5281/zenodo.18493618) с описанием датасета видео цистоскопий при раке мочевого пузыря
 
-| Пример 1 | Пример 2 |
-| --- | --- |
-| ![пример](./assets/00_sample.mp4) | ![пример](./assets/01_sample.mp4) |
+## Примеры видео
+
+https://github.com/user-attachments/assets/73397afb-ad84-45bd-a722-394f36c2f77a
+
+https://github.com/user-attachments/assets/12490ebe-28f6-4e6b-8861-673fd531fed6
 
 ## Цитирование
 ```
