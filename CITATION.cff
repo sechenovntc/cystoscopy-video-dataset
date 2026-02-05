@@ -1,0 +1,36 @@
+# YAML 1.2
+# Metadata for citation of this software according to the CFF format (https://citation-file-format.github.io/)
+#
+---
+title: "Clinically validated annotated dataset of cystoscopy videos with bladder cancer"
+abstract: "Detection of solid renal parenchymal lesions based on ultrasound images"
+authors:
+  - given-names: "V. Yu."
+    family-names: "Lekarev"
+date-released: 2026-02-05
+version: "0.1.0"
+type: software
+doi: "10.5281/zenodo.18493618"
+license: "Apache-2.0"
+repository-code: "https://github.com/sechenovntc/cystoscopy-video-dataset"
+url: "https://doi.org/10.5281/zenodo.18493618"
+cff-version: "1.2.0"
+message: "Please cite this software using the metadata from 'preferred-citation'."
+preferred-citation:
+  type: article
+  authors:
+    - given-names: "V. Yu."
+      family-names: "Lekarev"
+  doi: "10.5281/zenodo.18493618"
+  volume: 13
+  status: "in-preparation"
+  repository-code: "https://github.com/sechenovntc/cystoscopy-video-dataset"
+  license: "Apache-2.0"
+  languages:
+  - "en"
+  year: 2026
+  institution: 
+    name: "Sechenov University"
+    website: "https://sechenov.ru"
+  title: "Clinically validated annotated dataset of cystoscopy videos with bladder cancer"
+...
