@@ -8,8 +8,9 @@ authors = [
 ]
 license = {text = "Apache 2.0"}
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4"
 dependencies = [
+    "opencv-python-headless (>=4.13.0.92,<5.0.0.0)"
 ]
 
 
@@ -17,6 +18,109 @@ dependencies = [
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry]
+package-mode = false 
+
 [tool.poetry.group.dev.dependencies]
 cffconvert = "^2.0.0"
+black = "^26.3.1"
+pycln = "^2.6.0"
+ruff = "^0.15.6"
+pytype = "^2024.10.11"
+isort = "^8.0.1"
 
+
+
+[tool.poetry.group.zenodo.dependencies]
+zenodo-get = "^3.0.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    # exclude a few common directories in the root of the project
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | venv
+    | \.pytype
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.pycln]
+all = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+  "B",  # flake8-bugbear - https://docs.astral.sh/ruff/rules/#flake8-bugbear-b
+  "C90",  # mccabe (complexity) - https://docs.astral.sh/ruff/rules/#mccabe-c90
+  "E",  # pycodestyle errors - https://docs.astral.sh/ruff/rules/#error-e
+  "F",  # pyflakes - https://docs.astral.sh/ruff/rules/#pyflakes-f
+  "N",  # pep8-naming - https://docs.astral.sh/ruff/rules/#pep8-naming-n
+  "PIE",  # flake8-pie - https://docs.astral.sh/ruff/rules/#flake8-pie-pie
+  "TID", # flake8-tidy-imports - https://docs.astral.sh/ruff/rules/#flake8-tidy-imports-tid
+  "W",  # pycodestyle warnings - https://docs.astral.sh/ruff/rules/#warning-w
+  "NPY",         # NumPy specific rules
+  "UP",          # pyupgrade
+  "RUF100",      # aka yesqa
+]
+extend-ignore = [
+  "E741", # ambiguous variable name
+  "F401", # unused import
+  "NPY002", # numpy-legacy-random
+  "E203", # whitespace before ':' (pycodestyle)
+  "E501", # line too long (pycodestyle)
+  "C408", # unnecessary collection call (flake8-comprehensions)
+  "N812", # lowercase imported as non lowercase (pep8-naming)
+  "B023", # function uses loop variable (flake8-bugbear)
+  "B905", # zip() without an explicit strict= parameter (flake8-bugbear)
+  "B028", # no explicit stacklevel keyword argument found (flake8-bugbear)
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 50  # todo lower this treshold when yesqa id replaced with Ruff's RUF100
+
+[tool.pytype]
+# Space-separated list of files or directories to process.
+inputs = ["generate_video.py", "utils.py"]
+# Keep going past errors to analyze as many files as possible.
+keep_going = true
+# Run N jobs in parallel.
+jobs = 8
+# All pytype output goes here.
+output = ".pytype"
+# Paths to source code directories, separated by ':'.
+pythonpath = "."
+# Check attribute values against their annotations.
+check_attribute_types = true
+# Check container mutations against their annotations.
+check_container_types = true
+# Check parameter defaults and assignments against their annotations.
+check_parameter_types = true
+# Check variable values against their annotations.
+check_variable_types = true
+# Comma or space separated list of error names to ignore.
+disable = ["pyi-error"]
+# Report errors.
+report_errors = true
+# Experimental: Infer precise return types even for invalid function calls.
+precise_return = true
+# Experimental: solve unknown types to label with structural types.
+protocols = true
+# Experimental: Only load submodules that are explicitly imported.
+strict_import = false

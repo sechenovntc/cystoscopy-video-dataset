@@ -7,7 +7,7 @@ abstract: "Detection of solid renal parenchymal lesions based on ultrasound imag
 authors:
   - given-names: "V. Yu."
     family-names: "Lekarev"
-date-released: 2026-02-05
+date-released: 2026-03-12
 version: "0.1.0"
 type: software
 doi: "10.5281/zenodo.18493618"

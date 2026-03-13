@@ -8,7 +8,30 @@ English | [Русский](./README_ru.md)
 
 # [WIP] Clinically validated annotated dataset of cystoscopy videos with bladder cancer
 
-Repository of [paper](https://doi.org/10.5281/zenodo.18493618) with validated  dataset of cystoscopy videos with bladder cancer
+Repository of [paper](https://doi.org/10.5281/zenodo.18493618) with validated dataset of cystoscopy videos with bladder cancer
+
+## 0. Prepare environment
+Install [pypoetry](https://python-poetry.org/docs/) and install packages^
+```bash
+poetry install
+```
+Run `poetry env activate` to get script for virtual environment activation. Copy and run it in shell.
+
+## 1. Download data
+Assuming OS is linux distribution, script below will install `zenodo_get` utility and download data:
+```bash
+pip install zenodo_get
+mkdir archive/
+zenodo_get -o archive 18493618
+unzip archive/videos.zip -d archive
+```
+
+## 2. Generate samples
+To verify data visually, we added script for overlaying annotations on video samples. 
+To generate video with bounding boxes run script:
+```bash
+python generate_video.py
+```
 
 ## Video samples
 
