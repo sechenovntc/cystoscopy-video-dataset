@@ -8,7 +8,7 @@ English | [Русский](./README_ru.md)
 
 # [WIP] Clinically validated annotated dataset of cystoscopy videos with bladder cancer
 
-Repository of [paper](https://doi.org/10.5281/zenodo.18493618) with validated dataset of cystoscopy videos with bladder cancer
+Repository of [paper](https://doi.org/10.5281/zenodo.19002839) with validated dataset of cystoscopy videos with bladder cancer
 
 ## 0. Prepare environment
 Install [pypoetry](https://python-poetry.org/docs/) and install packages^
@@ -22,7 +22,7 @@ Assuming OS is linux distribution, script below will install `zenodo_get` utilit
 ```bash
 pip install zenodo_get
 mkdir archive/
-zenodo_get -o archive 18493618
+zenodo_get -o archive 19002839
 unzip archive/videos.zip -d archive
 ```
 
@@ -46,7 +46,7 @@ https://github.com/user-attachments/assets/12490ebe-28f6-4e6b-8861-673fd531fed6
 @Article{Lekarev2026,
   title={Clinically validated annotated dataset of cystoscopy videos with bladder cancer},
   author={Lekarev, V. Yu.},
-  doi={10.5281/zenodo.18493618},
+  doi={10.5281/zenodo.19002839},
   month     = Feb,
   year={2026}
 }
