@@ -7,7 +7,7 @@
 
 # [WIP] Клинически валидированный датасет видео цистоскопий при раке мочевого пузыря
 
-Репозиторий [статьи](https://doi.org/10.5281/zenodo.18493618) с описанием датасета видео цистоскопий при раке мочевого пузыря
+Репозиторий [статьи](https://doi.org/10.5281/zenodo.19002839) с описанием датасета видео цистоскопий при раке мочевого пузыря
 
 Вот перевод на русский язык:
 
@@ -23,7 +23,7 @@ poetry install
 ```bash
 pip install zenodo_get
 mkdir archive/
-zenodo_get -o archive 18493618
+zenodo_get -o archive 19002839
 unzip archive/videos.zip -d archive
 ```
 
@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/12490ebe-28f6-4e6b-8861-673fd531fed6
 @Article{Lekarev2026,
   title={Clinically validated annotated dataset of cystoscopy videos with bladder cancer},
   author={Lekarev, V. Yu.},
-  doi={10.5281/zenodo.18493618},
+  doi={10.5281/zenodo.19002839},
   month     = Mar,
   year={2026}
 }
